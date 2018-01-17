@@ -26,3 +26,10 @@ https://drive.google.com/open?id=1BfY0Hx2d2nm3I4JFh0W1cK2aHD1FSGea
 1. Darknet version openpose.cfg and openpose.weight are ported from COCO version 
   pose_deploy_linevec.prototxt and pose_iter_440000.caffemodel.
 2. You could change net input width, height in openpose.cfg.
+
+### TODO
+
+- [ ] Save result Image
+- [ ] Detect from Video
+- [ ] Detect from Camera(cam,ip)
+- [ ] Export bone information
