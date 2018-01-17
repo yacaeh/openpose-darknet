@@ -1,6 +1,7 @@
 QT -= gui
 
 CONFIG += c++11 console
+QMAKE_CXXFLAGS += -std=c++11
 CONFIG -= app_bundle
 
 # The following define makes your compiler emit warnings if you use
@@ -14,18 +15,19 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-INCLUDEPATH += /home/lincolnhard/Documents/darknet/include/
+INCLUDEPATH += /usr/local/darknet/include/
 
-LIBS += -L/home/lincolnhard/Documents/darknet
+LIBS += -L/usr/local/darknet
 LIBS += -ldarknet
 LIBS += -L/usr/local/lib/
 LIBS += -lopencv_core
 LIBS += -lopencv_highgui
 LIBS += -lopencv_imgproc
+LIBS += -lopencv_imgcodecs
 
 SOURCES += \
-    main.cpp \
-    run_darknet.c
+    src/main.cpp \
+    src/run_darknet.c
 
 HEADERS += \
-    run_darknet.h
+    src/run_darknet.h
