@@ -5,6 +5,7 @@ using namespace std;
 #include <opencv2/imgproc/imgproc.hpp>
 using namespace cv;
 #include "run_darknet.h"
+#include <tuple>
 
 #define POSE_MAX_PEOPLE 96
 #define NET_OUT_CHANNELS 57 // 38 for pafs, 19 for parts
