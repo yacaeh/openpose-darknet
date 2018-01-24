@@ -577,7 +577,8 @@ int main
 
     // 11. show and save result
     cout << "people: " << shape[0] << endl;
-    imshow("demo", im);
+    //imshow("demo", im); //show image
+    imwrite("output/result.jpg",im);//save result as jpg
     waitKey(0);
 
     delete [] heatmap_peaks;
