@@ -34,3 +34,4 @@ https://drive.google.com/open?id=1BfY0Hx2d2nm3I4JFh0W1cK2aHD1FSGea
 - [ ] Detect from Video
 - [ ] Detect from Camera (cam,ip)
 - [ ] Export bone information
+- [ ] Web Streaming using mjpg-streamer
